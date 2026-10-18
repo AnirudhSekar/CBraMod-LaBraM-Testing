@@ -1,0 +1,11 @@
+# Python 3.11. PyTorch/torchvision must be a compatible pair.
+numpy==1.26.4
+scipy==1.13.1
+scikit-learn==1.5.2
+mne==1.8.0
+matplotlib==3.9.2
+torch==2.5.1
+torchvision==0.20.1
+timm==0.9.16
+einops==0.8.0
+jupyterlab==4.2.5

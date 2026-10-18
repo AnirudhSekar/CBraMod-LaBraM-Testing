@@ -1,0 +1,7 @@
+method,balanced_accuracy_mean,balanced_accuracy_repeat_sd,macro_f1_mean,participant_auroc_mean
+bandpower,0.755,0.033,0.709,0.976
+cbramod_pretrained,0.779,0.021,0.744,0.94
+cbramod_random,0.778,0.005,0.754,0.914
+labram_pretrained,0.787,0.011,0.751,0.947
+labram_random,0.75,0.012,0.721,0.892
+bandpower_label_control,0.441,0.027,0.374,0.383

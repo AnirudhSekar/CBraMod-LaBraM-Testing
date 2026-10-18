@@ -1,0 +1,75 @@
+{
+  "provenance": "Transcribed from user-reported completed Colab console output, 2026-10-17. Not raw predictions.",
+  "precision": "Means and SDs are rounded as reported. Paired differences use separately reported values.",
+  "evaluation": {
+    "participants": 20,
+    "repeats": 3,
+    "outer_folds": 5,
+    "inner_folds": 4,
+    "seed": 42,
+    "metric_weighting": "equal participants",
+    "random_encoder_initializations": 1
+  },
+  "summary": [
+    {
+      "method": "bandpower",
+      "balanced_accuracy_mean": 0.755,
+      "balanced_accuracy_repeat_sd": 0.033,
+      "macro_f1_mean": 0.709,
+      "participant_auroc_mean": 0.976
+    },
+    {
+      "method": "cbramod_pretrained",
+      "balanced_accuracy_mean": 0.779,
+      "balanced_accuracy_repeat_sd": 0.021,
+      "macro_f1_mean": 0.744,
+      "participant_auroc_mean": 0.94
+    },
+    {
+      "method": "cbramod_random",
+      "balanced_accuracy_mean": 0.778,
+      "balanced_accuracy_repeat_sd": 0.005,
+      "macro_f1_mean": 0.754,
+      "participant_auroc_mean": 0.914
+    },
+    {
+      "method": "labram_pretrained",
+      "balanced_accuracy_mean": 0.787,
+      "balanced_accuracy_repeat_sd": 0.011,
+      "macro_f1_mean": 0.751,
+      "participant_auroc_mean": 0.947
+    },
+    {
+      "method": "labram_random",
+      "balanced_accuracy_mean": 0.75,
+      "balanced_accuracy_repeat_sd": 0.012,
+      "macro_f1_mean": 0.721,
+      "participant_auroc_mean": 0.892
+    },
+    {
+      "method": "bandpower_label_control",
+      "balanced_accuracy_mean": 0.441,
+      "balanced_accuracy_repeat_sd": 0.027,
+      "macro_f1_mean": 0.374,
+      "participant_auroc_mean": 0.383
+    }
+  ],
+  "paired_pretrained_minus_random": {
+    "cbramod": {
+      "mean_percentage_points": 0.11,
+      "positive_participants": 9,
+      "total_participants": 20
+    },
+    "labram": {
+      "mean_percentage_points": 3.76,
+      "positive_participants": 12,
+      "total_participants": 20
+    }
+  },
+  "limits": [
+    "LaBraM pretraining includes this dataset.",
+    "Repeat SD is descriptive, not a confidence interval.",
+    "Follow-up analysis after inspection of an initial split.",
+    "Original raw fold-level outputs and runtime metadata are not bundled."
+  ]
+}

@@ -1,0 +1,19 @@
+# Downloads and derived caches are recreated locally.
+data/
+weights/
+upstream/
+dataset.npz
+*_features.npy
+asset_manifest.json
+data_counts.json
+environment.json
+results.json
+comparison.png
+cross_validation/
+# Local Python/runtime files
+.venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.DS_Store
+# Keep the intentionally committed, small reported summaries.
